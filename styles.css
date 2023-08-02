@@ -81,7 +81,7 @@ section {
 .home-img img {
     width: 30vw;
     border-radius: 5rem;
-    height: 65rem;
+    height: 80rem;
     animation: floatImage 3s ease-in-out infinite;
 }
 
@@ -168,7 +168,7 @@ span {
 
 .about-img img {
     border-radius: 5rem;
-    height: 65rem;
+    height: 80rem;
     width: 30vw;
     animation: floatImages 3s ease-in-out infinite;
 }
@@ -267,6 +267,8 @@ span {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
+    grid-template-rows: 300px; /* Adjust this value to set the desired height */
+
 }
 
 .project-container .project-box {
@@ -279,6 +281,7 @@ span {
 
 .project-box img {
     width: 100%;
+    height: 250px;
     transition: .5s ease;
 }
 
