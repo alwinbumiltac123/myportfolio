@@ -44,8 +44,8 @@ ScrollReveal({
     delay: 100
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .about-img, .services-container, .skills-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content, .heading,', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .about-img, .services-container, .skills-box, .contact form, .project-container', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
@@ -58,3 +58,34 @@ const typed = new Typed('.multiple-text', {
     loop: true
     
 })
+
+// ============================= MODAL =============================
+const modal = document.getElementById('myModal');
+const modalContent = document.querySelector('.modal-content');
+const btn = document.getElementById('modalButton');
+const closeBtn = document.getElementsByClassName('close')[0];
+
+btn.onclick = function() {
+    if (modal.style.display === 'block') {
+        modal.style.display = 'none';
+        modalContent.style.display = 'none'; // Hide the modal content when closing
+    } else {
+        modal.style.display = 'block';
+        modalContent.style.display = 'block'; // Show the modal content when opening
+    }
+};
+
+closeBtn.onclick = function() {
+    modal.style.display = 'none';
+    modalContent.style.display = 'none'; // Hide the modal content when closing
+};
+
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+        modalContent.style.display = 'none'; // Hide the modal content when closing
+    }
+};
+
+
+

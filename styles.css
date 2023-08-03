@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,9 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: rgba(0, 255, 0, 0.8);
+    --third-bg-color: #fff;
+    
 }
 
 html {
@@ -23,6 +27,8 @@ html {
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    font-family: "Open Sans", sans-serif;
+
 }
 
 section {
@@ -72,31 +78,79 @@ section {
     display: none;
 }
 
+/* -----HOME CSS----- */
+
 .home {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.home-img img {
-    width: 30vw;
-    border-radius: 5rem;
-    height: 80rem;
-    animation: floatImage 3s ease-in-out infinite;
+.cube {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+
+}
+@keyframes animate {
+   0% {
+       transform: rotateX(-30deg) rotateY(360deg);
+
+   }
+   100%{
+       transform: rotateX(-30deg) rotateY(0);
+   }
 }
 
-@keyframes floatImage {
-    0% {
-        transform: translateY(0);
-    }
+.cube div {
+    position:absolute;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
 
-    50% {
-        transform: translateY(-2.4rem);
-    }
+.cube div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#00ec00);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
 
-    100% {
-        transform: translateY(0);
-    }
+.top {
+   position:absolute;
+   top: 0;
+   left: 0;
+   width: 300px;
+   height: 300px;
+   background: #222;
+   transform: rotateX(90deg) translateZ(150px);
+}
+.top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 300px;
+    height: 300px;
+    background: #0f0;
+    transform: translateZ(-380px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+                0 0 200px rgba(0, 255, 0, 0.4),
+                0 0 300px rgba(0, 255, 0, 0.6),
+                0 0 400px rgba(0, 255, 0, 0.8),
+                0 0 500px rgba(0, 255, 0, 1)
 }
 
 .home-content h3 {
@@ -158,6 +212,8 @@ span {
     box-shadow: none;
 }
 
+/* -----ABOUT CSS----- */
+
 .about {
     display: flex;
     justify-content: center;
@@ -207,6 +263,17 @@ span {
     margin: 2rem 0 3rem;
     text-align: justify;
 }
+
+/* -----MODAL CONTAINER----- */
+.modal-content {
+    display: none;
+}
+
+.modal-content h2 {
+    font-size: 2.6rem;
+    margin-top: 2rem;
+}
+
 
 /* -----Services CSS----- */
 .services h2 {
@@ -267,7 +334,7 @@ span {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
-    grid-template-rows: 300px; /* Adjust this value to set the desired height */
+    grid-template-rows: 300px;
 
 }
 
@@ -558,8 +625,6 @@ span {
         flex-direction: column;
     }
 
-    .project
-
     .home-content h3 {
         font-size: 2.6rem;
     }
@@ -568,9 +633,26 @@ span {
         font-size: 5rem;
     }
 
-    .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
+    .project-layer h4 {
+        font-size: 2rem;
+    }
+    
+    .project-layer p {
+        font-size: 1.2rem;
+    }
+
+    .cube {
+        width: 300px;
+        margin-top: 15rem;
+    }
+
+    .about-img img {
+        margin-top: 15rem;
     }
 
 }
+
+
+/* ------------------------------------------------------------------- */
+
+

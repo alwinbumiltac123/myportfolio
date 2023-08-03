@@ -29,10 +29,10 @@
             <h3>Hello, It's Me</h3>
             <h1>Aldrin Bumiltac</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>Looking for a job position that will allow me to develop my skills and knowledge
+            <!-- <p>Looking for a job position that will allow me to develop my skills and knowledge
                 in my chosen field while also proving me with the opportunity to make a positive
                 impact on the company and its clients.
-            </p>
+            </p> -->
             <div class="social-media">
                 <a href="https://www.facebook.com/alwin.bumiltac"><i class='bx bxl-facebook' ></i></a>
                 <a href="https://twitter.com/"><i class='bx bxl-twitter' ></i></a>
@@ -41,9 +41,15 @@
             </div>
             <a href="mailto:alwinbumiltac11@gmail.com" class="btn">Hire Me</a>
         </div>
-
-        <div class="home-img">
-            <img src="./Images/62842d0a1731c69f2094861fd9a7bd3e.jpg" alt="">
+        
+        <div class="cube">
+            <div class="top"></div>
+            <div>
+                <span style="--i: 0"></span>
+                <span style="--i: 1"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 3"></span>
+            </div>
         </div>
     </section>
 
@@ -63,12 +69,36 @@
                 during my on-the-job training. This mentorship has allowed me to grasp the intricacies of web development and fueled my desire 
                 to continue expanding my skill set in this field.
             </p>
-            <p>
-                As a lifelong learner, I am currently focused on honing my expertise in web development and aspire to become a skilled back-end web developer. 
-                The ever-evolving nature of technology and the endless possibilities within the digital realm fascinate me, and I am eager to take on new challenges 
-                and push the boundaries of what I can achieve.
-            </p>
-            <a href="#" class="btn">Read More</a>
+
+            <button id="modalButton" class="btn">Read More</button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close"></span>
+                    <h2>Experience</h2>
+                    <p><span><strong>Receptionist</strong></span></p>
+                    <p>Linear Tower Condominium, Makati<br>
+                       December 18, 2020 - August 15, 2022<br>
+                       I am responsible for greeting and assisting visitors, answering and directing phone calls, 
+                       and handling administrative tasks.
+                    </p>
+                    <p><span><strong>Encoder</strong></span> </p> 
+                    <p>MAAX, Mall of Asia<br>
+                        October 01, 2020 - October 18, 2020<br>
+                        I am responsible for inputting and updating data into a computer system or database. Typing data into a computer system or database
+                        using a keyboard or input device. Reviewing and verifying the accuracy of data to be entered
+                     </p>
+                     <p><span><strong>(OJT) Junior Front End Web Developer</strong></span> </p> 
+                    <p>Dreamforge, Pasig City<br>
+                        February 2023 - May 2023<br>
+                        I am responsible for developing user facing features, determining the structure and design of web pages,
+                        building reuseable codes, optimizing page, and using variety markup languages to create the web pages.
+                     </p>
+                         
+                    
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -217,6 +247,9 @@
         </form>
     </section>
 
+    <!-- NEW CONTENT DESIGN SECTION -->
+
+
     <!-- Scrool Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -225,6 +258,11 @@
 
     <!-- Custom JS -->
     <script src="index.js"></script>
+
+
+
+
+    
     
 
 </body>
