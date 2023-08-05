@@ -794,6 +794,40 @@ span {
     section {
         padding: 10rem 3% 2rem;
     }
+
+    .project4-content {
+        flex-direction: column;
+    }
+
+    .project4-modal-content {
+        height: 100vh;
+    }
+
+    .project5-content {
+        flex-direction: column;
+    }
+
+    .project5-modal-content {
+        height: 100vh;
+    }
+
+    .project5-img img {
+        width: 37rem;
+        height: 28rem;
+    }
+
+    .project6-content {
+        flex-direction: column;
+    }
+
+    .project6-modal-content {
+        height: 100vh;
+    }
+
+    .project6-img img {
+        width: 37rem;
+        height: 28rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -832,6 +866,40 @@ span {
         flex-direction: column;
     }
 
+    .project4-content {
+        flex-direction: column;
+    }
+
+    .project4-modal-content {
+        height: 100vh;
+    }
+
+    .project5-content {
+        flex-direction: column;
+    }
+
+    .project5-modal-content {
+        height: 100vh;
+    }
+
+    .project5-img img {
+        width: 35rem;
+        height: 28rem;
+    }
+
+    .project6-content {
+        flex-direction: column;
+    }
+
+    .project6-modal-content {
+        height: 100vh;
+    }
+
+    .project6-img img {
+        width: 35rem;
+        height: 28rem;
+    }
+
     .home-content h3 {
         font-size: 2.6rem;
     }
@@ -855,11 +923,9 @@ span {
 
     .about-img img {
         margin-top: 15rem;
+        height: 50rem;
     }
 
 }
 
-
-/* ------------------------------------------------------------------- */
-
-
+/* --- SKILLS IMAGE SWIPER ---  */

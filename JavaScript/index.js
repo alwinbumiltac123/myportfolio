@@ -150,4 +150,5 @@ window.onclick = function(event) {
 }
 
 
+// ============================= SKILLS SECTION -- SLIDE SHOW =============================
 
