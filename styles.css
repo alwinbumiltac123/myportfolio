@@ -16,7 +16,6 @@
     --text-color: #fff;
     --main-color: rgba(0, 255, 0, 0.8);
     --third-bg-color: #fff;
-    
 }
 
 html {
@@ -28,7 +27,6 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: "Open Sans", sans-serif;
-
 }
 
 section {
@@ -55,7 +53,7 @@ section {
 
 .logo {
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--main-color);
     font-weight: 600;
     cursor: pointer;
 }
@@ -265,11 +263,11 @@ span {
 }
 
 /* -----MODAL CONTAINER----- */
-.modal-content {
+.about-modal-content {
     display: none;
 }
 
-.modal-content h2 {
+.about-modal-content h2 {
     font-size: 2.6rem;
     margin-top: 2rem;
 }
@@ -394,12 +392,221 @@ span {
     height: 5rem;
     background: var(--text-color);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .project-layer a i {
     font-size: 2rem;
     color: var(--second-bg-color)
     ;
+}
+
+/* ----- MODAL PROJECT 4 -----  */
+.project4-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    overflow: auto;
+}
+
+.project4-modal-content {
+    background: var(--second-bg-color);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    height: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.project4-content {
+    display: flex;
+    justify-content:center;
+    margin-top: 5rem;
+}
+
+.project4-text {
+    margin-left: 2rem;
+}
+
+.project4-text h2 {    
+    color: var(--main-color);
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.project4-text p {    
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.project4-img img {
+    width: 28rem;
+    height: 38rem;
+    margin-left: 2rem;
+}
+
+.project4-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project4-close:hover,
+.project4-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ----- MODAL PROJECT 5 -----  */
+.project5-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    overflow: auto;
+}
+
+.project5-modal-content {
+    background: var(--second-bg-color);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    height: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.project5-content {
+    display: flex;
+    justify-content:center;
+    margin-top: 5rem;
+}
+
+.project5-text {
+    margin-left: 2rem;
+}
+
+.project5-text h2 {    
+    color: var(--main-color);
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.project5-text p {    
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.project5-img img {
+    width: 50rem;
+    height: 38rem;
+    margin-left: 2rem;
+}
+
+.project5-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project5-close:hover,
+.project5-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ----- MODAL PROJECT 6 -----  */
+.project6-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    overflow: auto;
+}
+
+.project6-modal-content {
+    background: var(--second-bg-color);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    height: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.project6-content {
+    display: flex;
+    justify-content:center;
+    margin-top: 5rem;
+}
+
+.project6-text {
+    margin-left: 2rem;
+}
+
+.project6-text h2 {    
+    color: var(--main-color);
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.project6-text p {    
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.project6-img img {
+    width: 50rem;
+    height: 38rem;
+    margin-left: 2rem;
+}
+
+.project6-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project6-close:hover,
+.project6-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style for modal content */
+.modal-body {
+    font-size: 16px;
 }
 
 /* -----Skills CSS----- */

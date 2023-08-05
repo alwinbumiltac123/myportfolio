@@ -29,10 +29,6 @@
             <h3>Hello, It's Me</h3>
             <h1>Aldrin Bumiltac</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
-            <!-- <p>Looking for a job position that will allow me to develop my skills and knowledge
-                in my chosen field while also proving me with the opportunity to make a positive
-                impact on the company and its clients.
-            </p> -->
             <div class="social-media">
                 <a href="https://www.facebook.com/alwin.bumiltac"><i class='bx bxl-facebook' ></i></a>
                 <a href="https://twitter.com/"><i class='bx bxl-twitter' ></i></a>
@@ -70,11 +66,11 @@
                 to continue expanding my skill set in this field.
             </p>
 
-            <button id="modalButton" class="btn">Read More</button>
+            <button id="about-modalButton" class="btn">Read More</button>
 
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close"></span>
+            <div id="about-myModal" class="about-modal">
+                <div class="about-modal-content">
+                    <span class="about-close"></span>
                     <h2>Experience</h2>
                     <p><span><strong>Receptionist</strong></span></p>
                     <p>Linear Tower Condominium, Makati<br>
@@ -146,7 +142,7 @@
                 <div class="project-layer">
                     <h4>TransConnect</h4>
                     <p>Mobile Application for commuters</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <a id="project4-modal-trigger"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
@@ -155,7 +151,7 @@
                 <div class="project-layer">
                     <h4>NotiGrade</h4>
                     <p>Portal Grading System</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <a id="project5-modal-trigger"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
@@ -164,11 +160,71 @@
                 <div class="project-layer">
                     <h4>TransConnect</h4>
                     <p>Web Application for Transport Workers</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <a id="project6-modal-trigger"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- -- PROJECT4 MODAL --  -->
+    <div class="project4-modal" id="project4-modal">
+        <div class="project4-modal-content">
+            <span class="project4-close" id="project4-closeModal">&times;</span>
+            <div class="project4-content">
+                <div class="project4-img">
+                    <img src="Images/landingpage.jpg" alt="">
+                </div>
+                <div class="project4-text">
+                    <h2>TransConnect</h2>
+                    <p>Mobile Application for Commuters</p><br>
+                    <p>The clients of this project is for anyone (students, workers, etc.) 
+                        that has a problem finding a terminal with less number of commuters..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -- PROJECT 5 MODAL --  -->
+    <div class="project5-modal" id="project5-modal">
+        <div class="project5-modal-content">
+            <span class="project5-close" id="project5-closeModal">&times;</span>
+            <div class="project5-content">
+                <div class="project5-img">
+                    <img src="Images/notigrade.jpg" alt="">
+                </div>
+                <div class="project5-text">
+                    <h2>NotiGrade</h2>
+                    <p>Portal Grading System</p><br>
+                    <p>This project was developed with the school’s internal process in consideration. 
+                        The software has to be inclined with the school’s requirements. The system has five 
+                        expected users, these users are the student, teacher, registrar, parent and the admin. 
+                        The system is also required to have a registration system for the use of the registrar.
+                        The system also followed the recommendation of the client to have mandatory accounts for
+                        the parents of each student.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -- PROJECT 6 MODAL --  -->
+    <div class="project6-modal" id="project6-modal">
+        <div class="project6-modal-content">
+            <span class="project6-close" id="project6-closeModal">&times;</span>
+            <div class="project6-content">
+                <div class="project6-img">
+                    <img src="Images/project3.jpg" alt="">
+                </div>
+                <div class="project6-text">
+                    <h2>TransConnect</h2>
+                    <p>Web Application for Transport Worker</p><br>
+                    <p>Transport Workers are the ones who are in the field of this workplace, 
+                        the TransConnect is designed to provide service in areas with significant 
+                        passenger traffic, and it can store and send data via cloud.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Skills Section Design -->
     <section class="skills" id="skills">

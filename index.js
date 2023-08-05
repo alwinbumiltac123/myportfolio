@@ -59,33 +59,95 @@ const typed = new Typed('.multiple-text', {
     
 })
 
-// ============================= MODAL =============================
-const modal = document.getElementById('myModal');
-const modalContent = document.querySelector('.modal-content');
-const btn = document.getElementById('modalButton');
-const closeBtn = document.getElementsByClassName('close')[0];
+// ============================= ABOUT SECTION -- MODAL READ MORE =============================
+const about = document.getElementById('about-myModal');
+const aboutContent = document.querySelector('.about-modal-content');
+const aboutBtn = document.getElementById('about-modalButton');
+const closeContent = document.getElementsByClassName('about-close')[0];
 
-btn.onclick = function() {
-    if (modal.style.display === 'block') {
-        modal.style.display = 'none';
-        modalContent.style.display = 'none'; // Hide the modal content when closing
+aboutBtn.onclick = function() {
+    if (about.style.display === 'block') {
+        about.style.display = 'none';
+        aboutContent.style.display = 'none';
+        aboutBtn.textContent = 'Read More';
     } else {
-        modal.style.display = 'block';
-        modalContent.style.display = 'block'; // Show the modal content when opening
+        about.style.display = 'block';
+        aboutContent.style.display = 'block';
+        aboutBtn.textContent = 'Read Less';
     }
 };
 
-closeBtn.onclick = function() {
-    modal.style.display = 'none';
-    modalContent.style.display = 'none'; // Hide the modal content when closing
+closeContent.onclick = function() {
+    about.style.display = 'none';
+    aboutContent.style.display = 'none';
+    aboutBtn.textContent = 'Read More'; 
 };
 
 window.onclick = function(event) {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-        modalContent.style.display = 'none'; // Hide the modal content when closing
+    if (event.target === about) {
+        about.style.display = 'none';
+        aboutContent.style.display = 'none';
+        aboutBtn.textContent = 'Read More'; 
     }
 };
+
+// ============================= PROJECT SECTION -- MODAL PROJECT 4 =============================
+var project4_modal = document.getElementById('project4-modal');
+var project4_modalTrigger = document.getElementById('project4-modal-trigger');
+var project4_closeModal = document.getElementById('project4-closeModal');
+
+project4_modalTrigger.onclick = function() {
+    project4_modal.style.display = 'block';
+}
+
+project4_closeModal.onclick = function() {
+    project4_modal.style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target == project4_modal) {
+        project4_modal.style.display = 'none';
+    }
+}
+
+
+// ============================= PROJECT SECTION -- MODAL PROJECT 5 =============================
+var project5_modal = document.getElementById('project5-modal');
+var project5_modalTrigger = document.getElementById('project5-modal-trigger');
+var project5_closeModal = document.getElementById('project5-closeModal');
+
+project5_modalTrigger.onclick = function() {
+    project5_modal.style.display = 'block';
+}
+
+project5_closeModal.onclick = function() {
+    project5_modal.style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target == project5_modal) {
+        project5_modal.style.display = 'none';
+    }
+}
+
+// ============================= PROJECT SECTION -- MODAL PROJECT 6 =============================
+var project6_modal = document.getElementById('project6-modal');
+var project6_modalTrigger = document.getElementById('project6-modal-trigger');
+var project6_closeModal = document.getElementById('project6-closeModal');
+
+project6_modalTrigger.onclick = function() {
+    project6_modal.style.display = 'block';
+}
+
+project6_closeModal.onclick = function() {
+    project6_modal.style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target == project6_modal) {
+        project6_modal.style.display = 'none';
+    }
+}
 
 
 
