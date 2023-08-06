@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>myPortfolio</title>
 </head>
 <body>
@@ -18,13 +19,13 @@
          <a href="#about" class="">About</a>
          <a href="#services">Services</a>
          <a href="#project">Projects</a>
-         <a href="#skills">Skills</a>
+         <a href="#slide-show">Skills</a>
          <a href="#contact">Contact</a>
        </nav>
     </header>
 
     <!-- Home Section Design -->
-    <section class="home" id="home">
+    <div class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Aldrin Bumiltac</h1>
@@ -33,7 +34,7 @@
                 <a href="https://www.facebook.com/alwin.bumiltac"><i class='bx bxl-facebook' ></i></a>
                 <a href="https://twitter.com/"><i class='bx bxl-twitter' ></i></a>
                 <a href="https://www.instagram.com/"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.linkedin.com/in/aldrin-bumiltac-a32a51261/"><i class='bx bxl-linkedin' ></i></a>
             </div>
             <a href="mailto:alwinbumiltac11@gmail.com" class="btn">Hire Me</a>
         </div>
@@ -47,10 +48,10 @@
                 <span style="--i: 3"></span>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- About Section Design -->
-    <section class="about" id="about">
+    <div class="about" id="about">
         <div class="about-img">
             <img src="./Images/62842d0a1731c69f2094861fd9a7bd3e.jpg" alt="">
         </div>
@@ -96,10 +97,10 @@
             </div>
 
         </div>
-    </section>
+    </div>
 
     <!-- Services Section Design -->
-    <section class="services" id="services">
+    <div class="services" id="services">
         <h2 class="heading">My <span>Services</span></h2>
 
         <div class="services-container">
@@ -130,10 +131,10 @@
                 <a href="https://aws.amazon.com/mobile/mobile-application-development/" class="btn">Read More</a>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Project Section Design -->
-    <section class="project" id="project">
+    <div class="project" id="project">
         <h2 class="heading">My <span>Projects</span></h2>
 
         <div class="project-container">
@@ -164,7 +165,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- -- PROJECT4 MODAL --  -->
     <div class="project4-modal" id="project4-modal">
@@ -227,7 +228,55 @@
 
 
     <!-- Skills Section Design -->
-    <section class="skills" id="skills">
+    <div class="slide-show" id="slide-show">
+        <h2 class="heading-slide">Tech <span>Stacks</span></h2>
+        <div class="wrapper">
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="Images/python.png" alt="img" draggable="false"></div>
+                    <h2>Python</h2>
+                    <div class="skill-python">60%</div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/html.png" alt="img" draggable="false"></div>
+                    <h2>HTML</h2>
+                    <div class="skill-html">80%</div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/css-3.png" alt="img" draggable="false"></div>
+                    <h2>CSS</h2>
+                    <div class="skill-css">60%</div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/a.png" alt="img" draggable="false"></div>
+                    <h2>Angular</h2>
+                    <div class="skill-angular">50%</div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/java-script.png" alt="img" draggable="false"></div>
+                    <h2>JavaScript</h2>
+                    <div class="skill-javascript">65%</div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/physics.png" alt="img" draggable="false"></div>
+                    <h2>ReactJs</h2>
+                    <div class="skill-react">50%</div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/c-sharp.png" alt="img" draggable="false"></div>
+                    <h2>C#</h2>
+                    <div class="skill-csharp">30%</div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/mysql.png" alt="img" draggable="false"></div>
+                    <h2>MySQL</h2>
+                    <div class="skill-sql">40%</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <div class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
 
         <div class="skills-container">
@@ -283,10 +332,10 @@
                 <div class="skill-sql">40%</div>
             </div>
         </div>
-    </section>
+    </div> -->
 
     <!-- Contact Section Design -->
-    <section class="contact" id="contact">
+    <div class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
         <form action="#">
@@ -301,16 +350,8 @@
             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
-    </section>
-
-    <!-- NEW CONTENT DESIGN SECTION -->
-    <!-- <section class="new-content" id="new-content">
-        <h2 class="heading">New <span>Content</span></h2>   
-    </section> -->
-
+    </div>
     
-    
-
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -318,7 +359,7 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <!-- Custom JS -->
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
 
 
 </body>

@@ -27,12 +27,15 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: "Open Sans", sans-serif;
+    background-image: url(Images/homebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-section {
+/* section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
-}
+} */
 
 .header {
     position: fixed;
@@ -82,6 +85,8 @@ section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
 }
 
 .cube {
@@ -144,7 +149,7 @@ section {
     background: #0f0;
     transform: translateZ(-380px);
     filter: blur(20px);
-    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+    box-shadow: 0 0 120px rgba(241, 83, 215, 0.2),
                 0 0 200px rgba(0, 255, 0, 0.4),
                 0 0 300px rgba(0, 255, 0, 0.6),
                 0 0 400px rgba(0, 255, 0, 0.8),
@@ -217,7 +222,8 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--second-bg-color);
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
 }
 
 .about-img img {
@@ -274,17 +280,28 @@ span {
 
 
 /* -----Services CSS----- */
-.services h2 {
+.services {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;    
+}   
+
+/* .services h2 {
     margin-bottom: 5rem;
-}
+} */
 
 .services-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
 }
+
+/* .services-container {
+    display: grid;
+    column-gap: normal;
+    width: 50%;
+} */
 
 .services-container .services-box {
     flex: 1 1 30rem;
@@ -296,7 +313,7 @@ span {
     background: linear-gradient(rgba(0,0,0,1.5), var(--main-color));
     transition: 0.5s ease;
     transform: translateY(30%);
-    height: 35rem;
+    height: 45rem;
 }
 
 .services-container .services-box:hover {
@@ -305,22 +322,23 @@ span {
 }
 
 .services-box i {
-    font-size: 7rem;
+    font-size: 10rem;
     color: var(--main-color);
 }
 
 .services-box h3 {
-    font-size: 2.3rem;
+    font-size: 3rem;
 }
 
 .services-box p {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin: 1rem 0 3rem;
 }
 
 /* -----Project CSS----- */
 .project {
-    background: var(--second-bg-color);
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
 }
 
 .project h2 {
@@ -329,7 +347,7 @@ span {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
     grid-template-rows: 300px;
@@ -346,7 +364,7 @@ span {
 
 .project-box img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     transition: .5s ease;
 }
 
@@ -616,6 +634,8 @@ span {
 
 .skills {
     background: var(--bg-color);
+    min-height: 100vh;
+    padding: 5rem 9% 2rem;
 }
 
 .skills-container {
@@ -735,7 +755,8 @@ span {
 
 /* -----Contact CSS----- */
 .contact {
-    background: var(--second-bg-color);
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
 }
 
 .contact h2 {
@@ -761,7 +782,7 @@ span {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -779,14 +800,53 @@ span {
     cursor: pointer;
 }
 
-/* BREAKPOINTS */
+/* -- CODES FOR RESPONSIVENESS --  */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
+
+    .project4-content {
+        flex-direction: column;
+    }
+
+    .project4-modal-content {
+        height: 100vh;
+    }
+
+    .project4-img img {
+        width: 25rem;
+        height: 28rem;
+    }
+
+    .project5-content {
+        flex-direction: column;
+    }
+
+    .project5-modal-content {
+        height: 100vh;
+    }
+
+    .project5-img img {
+        width: 34rem;
+        height: 28rem;
+    }
+
+    .project6-modal-content {
+        height: 100vh;
+    }
+
+    .project6-content {
+        flex-direction: column;
+    }
+
+    .project6-img img {
+        width: 34rem;
+        height: 28rem;
+    }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .header {
         padding: 2rem 3%;
     }
@@ -883,7 +943,7 @@ span {
     }
 
     .project5-img img {
-        width: 35rem;
+        width: 25rem;
         height: 28rem;
     }
 
@@ -896,7 +956,7 @@ span {
     }
 
     .project6-img img {
-        width: 35rem;
+        width: 25rem;
         height: 28rem;
     }
 
@@ -926,7 +986,133 @@ span {
         height: 50rem;
     }
 
+    .slide-show {
+        flex-direction: column;
+    }
+
 }
 
 /* --- SKILLS IMAGE SWIPER ---  */
+.heading-slide{
+    font-size: 5rem;
+    margin-right: 2rem;
+}
+
+.slide-show {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper i {
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    background: var(--second-bg-color);
+    text-align: center;
+    line-height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    color: var(--main-color);
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 0.23);
+}
+
+.wrapper i:first-child {
+    left: -2.2rem;
+}
+
+.wrapper i:last-child {
+    right: -2.2rem;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: 0;
+    scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+}
+
+.carousel.dragging .card {
+    cursor: grabbing;
+    user-select: none;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    list-style: none;
+    height: 50rem;
+    border-radius: .8rem;
+    padding-bottom: 1.5rem;
+    background: var(--second-bg-color);
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card .img {
+    width: 14.8rem;
+    height: 14.8rem;
+    border-radius: 50%;
+}
+
+.card .img img {
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card h2 {
+    color: var(--third-bg-color);
+    font-weight: 500;
+    font-size: 4rem;
+    margin: 3rem 0 .5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%
+    }
+}
+
 
